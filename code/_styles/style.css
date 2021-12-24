@@ -21,3 +21,38 @@ font-family: 'Roboto', sans-serif;
     --font-title: 'Lato', sans-serif;
     --font-text: 'Roboto', sans-serif
 }
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    height: 144px;
+    background-color: var(--primary-color);
+}
+
+h1#title{
+    font: normal 400 1.8em var(--font-title) ;
+    color: var(--text-color-primary);
+    margin: 0px;
+}
+
+span#title-gold{
+    color: var(--secondary-color-light);    
+}
+
+ul#menu li{
+    display: inline;
+    margin: 0px 13px 0px 0px;
+}
+
+nav a{
+    text-decoration: none;
+    font: normal normal 1em var(--font-title);
+    
+    color: var(--text-color-primary);
+}
+
+nav a:hover{
+    color: var(--secondary-color-light);
+}
