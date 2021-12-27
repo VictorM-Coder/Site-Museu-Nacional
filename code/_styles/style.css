@@ -55,8 +55,28 @@ h1#title{
 }
 
 h2{
-    font: normal bold 1.2em var(--font-title);
+    font: normal bold 1.1em var(--font-title);
     color: var(--secondary-color-dark);
+    margin-bottom: 8px;
+}
+
+a.link-default{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font: normal normal 0.9em var(--font-text);
+}
+
+a.link-default:hover{
+    text-decoration: underline;
+    color: var(--secondary-color-light);
+}
+
+p.p-default{
+    font: normal normal 1em var(--font-text);
+}
+
+ul.links-list{
+    list-style-position: inside;
 }
 
 span#title-gold{
@@ -85,7 +105,7 @@ nav a:hover{
 
 main{
     max-width: 1100px;
-    background-color: violet;
+    /*background-color: violet;*/
     height: 800px;
     margin: auto;
     z-index: 1;
@@ -99,4 +119,19 @@ main{
 section{
     max-width: 710px;
     flex-grow: 1;
+}
+
+div#container-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+article{
+    width: 350px;
+    /*background-color: yellowgreen;*/
+    display: inline-block;
+    margin: 13px 0px;
+    padding: 8px;
+    box-sizing: border-box;
 }
