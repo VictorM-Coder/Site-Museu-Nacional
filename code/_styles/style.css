@@ -106,7 +106,6 @@ nav a:hover{
 main{
     max-width: 1100px;
     /*background-color: violet;*/
-    height: 800px;
     margin: auto;
     z-index: 1;
     margin-top: -34px;
@@ -134,4 +133,21 @@ article{
     margin: 13px 0px;
     padding: 8px;
     box-sizing: border-box;
+}
+
+footer{
+    margin-top: 21px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav#footer-nav{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+div#copyright{
+    display: block;
 }
