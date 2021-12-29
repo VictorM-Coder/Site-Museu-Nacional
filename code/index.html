@@ -61,8 +61,41 @@
             </div>
         </section>
         <aside>
-            <img class="default-img" src="_imagens/depoimento.png" alt="texto: museu nacional criado em 1922, é um dos mais importantes museus do Brasil, reunindo um acervo de mais de 250 000 itens. direção do museu">
+            <img class="default-img" src="_imagens/depoimento.png" alt="texto: museu nacional criado em 1922, é um dos mais importantes museus do Brasil, reunindo um acervo de mais de 250 000 itens. direção do 
+            museu">
+
+            <form id="cadastro-visita" class="aside-content">
+                <h2 class="light">Faça uma visita</h2>
+    
+                <label for="data-visita">Data</label>
+                <input name="data-visita" type="date" style="width: 144px;">
+    
+                <label for="qnt-pessoas">Qnt pessoas</label>
+                <input name="qnt-pessoas" type="number" min="1" max="20" style="width: 34px;">
+    
+                <input class="button-check" type="button" value="VERIFICAR DISPONIBILIDADE">
+            </form>
+
+            <nav id="galeria" class="aside-content">
+                <h2 class="light">Galeria de Fotos</h2>
+                <div id="galeria-container">
+                    <div class="image-background">
+                        <img class="img-galeria" src="_imagens/imagem1.jpg" alt="">
+                    </div>
+                    <div  class="image-background">
+                        <img class="img-galeria" src="_imagens/imagem2.jpg" alt="">
+                    </div>
+                    <div class="image-background">
+                        <img class="img-galeria" src="_imagens/imagem3.jpg" alt="">
+                    </div>
+                    <div class="image-background">
+                        <img class="img-galeria" src="_imagens/imagem4.jpg" alt="">
+                    </div>
+                </div>
+            </nav>
         </aside>
+
+        
     </main>
 
     <footer>

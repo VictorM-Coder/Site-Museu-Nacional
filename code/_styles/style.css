@@ -1,5 +1,5 @@
 @charset "utf8";
-
+/*#region atributos*/
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /*
 font-family: 'Lato', sans-serif;
@@ -11,6 +11,9 @@ font-family: 'Roboto', sans-serif;
     --primary-color-light: #4d493d;
     --primary-color-dark: #000;
 
+    --primary-color-with-transparence: #25221749;
+    --primary-color-light--with-transparence: #4d493d31;
+
     --secondary-color: #af670a;
     --secondary-color-light: #e6953f;/*pode ser usado em contraste com a primária*/
     --secondary-color-dark: #7a3c00;
@@ -21,14 +24,18 @@ font-family: 'Roboto', sans-serif;
     --font-title: 'Lato', sans-serif;
     --font-text: 'Roboto', sans-serif
 }
+/*#endregion */
+
 * {
     margin: 0px;
     padding: 0px;
+    font-family: var(--font-text);
 }
 
 body{
     background-color: #f4f2ec ;
 }
+
 
 header{
     height: 144px;
@@ -46,6 +53,7 @@ div#container-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0px 21px;
 }
 
 h1#title{
@@ -135,6 +143,49 @@ article{
     box-sizing: border-box;
 }
 
+.aside-content{
+   box-sizing: border-box;
+   padding: 21px;
+}
+
+form#cadastro-visita{
+    width: 350px;
+    background-color: var(--primary-color-with-transparence);
+    backface-visibility: 0.1;
+}
+
+nav#galeria{
+    width: 350px;
+    background-color: var(--primary-color-light--with-transparence);
+}
+
+div#galeria-container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+div.image-background{
+    width: 126px;
+    height: 133px;
+    background: url("../_imagens/fundo-foto.png") no-repeat center center;
+    text-align: center;
+}
+
+input.button-check{
+    width: 100%;
+    margin-top: 13px;
+    height: 34px;
+    background-color: var(--secondary-color);
+}
+
+img.img-galeria{
+    margin-top: 20px;
+}
+
+/*#region footer*/
 footer{
     margin-top: 21px;
     display: flex;
@@ -150,4 +201,6 @@ nav#footer-nav{
 
 div#copyright{
     display: block;
+    margin: 13px 0px 34px 0px;
 }
+/*#endregion*/
